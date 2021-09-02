@@ -1,87 +1,37 @@
-import React from "react";
-import { NavigationContainer, StackActions } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import React from "react";
 import {
   SafeAreaView,
-  StyleSheet,
   ScrollView,
-  View,
-  Text,
-  Button,
   StatusBar,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
-
-const DashboardScreen = ({ navigation }) => {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Dashboard Screen</Text>
-      <Button
-        title="Breathing Flow Signal"
-        onPress={() => navigation.navigate("Breathing Flow Signal")}
-      />
-      <Button
-        title="Nasal Pressure"
-        onPress={() => navigation.navigate("Nasal Pressure")}
-      />
-    </View>
-  );
-};
-
-const BreathingFlowSignalScreen = ({ navigation }) => {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Breathing Flow Signal Screen</Text>
-      <Button
-        title="Go to Dashboard"
-        onPress={() => navigation.navigate("Dashboard")}
-      />
-      <Button title="Go back" onPress={() => navigation.goBack()} />
-    </View>
-  );
-};
-
-const NasalPressureScreen = ({ navigation }) => {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Nasal Pressure Screen</Text>
-      <Button
-        title="Go to Dashboard"
-        onPress={() => navigation.navigate("Dashboard")}
-      />
-      <Button title="Go back" onPress={() => navigation.goBack()} />
-    </View>
-  );
-};
+import Dashboard from "./src/screens/Dashboard";
+import BreathingFlowSignal from "./src/screens/BreathingFlowSignal";
+import NasalPressure from "./src/screens/NasalPressure";
 
 const Stack = createStackNavigator();
+
+const AppStack = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="Dashboard" component={Dashboard} />
+      <Stack.Screen
+        name="BreathingFlowSignal"
+        component={BreathingFlowSignal}
+      />
+      <Stack.Screen name="NasalPressure" component={NasalPressure} />
+    </Stack.Navigator>
+  );
+};
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: "#009387",
-          },
-          headerTintColor: "#fff",
-          headerTitleStyle: {
-            fontWeight: "bold",
-          },
-        }}
-      >
-        <Stack.Screen
-          name="Dashboard"
-          component={DashboardScreen}
-          options={{
-            title: "Dashboard",
-          }}
-        />
-        <Stack.Screen
-          name="Breathing Flow Signal"
-          component={BreathingFlowSignalScreen}
-        />
-        <Stack.Screen name="Nasal Pressure" component={NasalPressureScreen} />
-      </Stack.Navigator>
+      <AppStack />
     </NavigationContainer>
   );
 };
