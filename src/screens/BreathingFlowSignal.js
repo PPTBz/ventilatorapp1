@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { View, Text } from "react-native";
 import Colors from "../theme/Colors";
 import ViewContainer, { styles } from "../components/ViewContainer";
@@ -16,8 +16,8 @@ const BreathingFlowSignal = () => {
               {
                 label: "Breathing Flow Signal (L•s^-1)",
                 data: [32, 45, 12, 76, 69],
-                backgroundColor: ["rgba(75, 192, 192, 0.6)"],
-                borderWidth: 4,
+                color: (opacity = 0) => `rgba(255, 255, 255, ${opacity})`,
+                strokeWidth: 4,
               },
             ],
           }}
