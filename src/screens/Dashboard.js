@@ -33,7 +33,7 @@ const Dashboard = ({ navigation }) => {
             style={{
               color: "#ffffff",
               textAlign: "center",
-              fontSize: "18",
+              fontSize: 18,
               fontWeight: "bold",
             }}
           >
@@ -55,7 +55,7 @@ const Dashboard = ({ navigation }) => {
             style={{
               color: "#ffffff",
               textAlign: "center",
-              fontSize: "18",
+              fontSize: 18,
               fontWeight: "bold",
             }}
           >
