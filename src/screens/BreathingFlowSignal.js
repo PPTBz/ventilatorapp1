@@ -2,59 +2,90 @@ import React from "react";
 import { View, Text } from "react-native";
 import Colors from "../theme/Colors";
 import ViewContainer, { styles } from "../components/ViewContainer";
-import { LineChart, YAxis, XAxis, Grid } from "react-native-svg-charts";
+import {
+  Chart,
+  Line,
+  Area,
+  HorizontalAxis,
+  VerticalAxis,
+} from "react-native-responsive-linechart";
 
-class BreathingFlowSignal extends React.PureComponent {
-  render() {
-    const data = [
-      50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80,
-    ];
+const BreathingFlowSignal = () => {
+  return (
+    <View>
+      <Text
+        style={{
+          paddingTop: 250,
+          textAlign: "center",
+          fontWeight: "bold",
+          fontSize: 20,
+          color: "#009394",
+        }}
+      >
+        Breathing Flow Signal
+      </Text>
 
-    const axesSvg = { fontSize: 10, fill: "grey" };
-    const verticalContentInset = { top: 10, bottom: 10 };
-    const xAxisHeight = 30;
-
-    return (
-      <>
-        <Text
-          style={{
-            padding: 20,
-            textAlign: "center",
-            fontWeight: "bold",
-            fontSize: 20,
-            color: "#009394",
+      <Chart
+        style={{ height: 200, width: 400 }}
+        data={[
+          { x: 0, y: 0.1 },
+          { x: 1, y: 0.4 },
+          { x: 2, y: 0.7 },
+          { x: 3, y: 0.1 },
+          { x: 4, y: 0.4 },
+          { x: 5, y: 0.7 },
+          { x: 6, y: 0.1 },
+          { x: 7, y: 0.4 },
+          { x: 8, y: 0.7 },
+          { x: 9, y: 0.1 },
+          { x: 10, y: 0.4 },
+          { x: 11, y: 0.7 },
+          { x: 12, y: 0.1 },
+          { x: 13, y: 0.4 },
+          { x: 14, y: 0.7 },
+          { x: 15, y: 0.1 },
+          { x: 16, y: 0.4 },
+          { x: 17, y: 0.7 },
+          { x: 18, y: 0.1 },
+          { x: 19, y: 0.4 },
+          { x: 20, y: 0.7 },
+        ]}
+        padding={{ left: 60, bottom: 20, right: 25, top: 30 }}
+        xDomain={{ min: 0, max: 20 }}
+        yDomain={{ min: -0.4, max: 1 }}
+      >
+        <VerticalAxis
+          tickCount={8}
+          theme={{ labels: { formatter: (v) => v.toFixed(2) } }}
+        />
+        <HorizontalAxis tickCount={5} />
+        <Area
+          theme={{
+            gradient: {
+              from: { color: "#009394" },
+              to: { color: "#009394", opacity: 0.4 },
+            },
           }}
-        >
-          Breathing Flow Signal
-        </Text>
-        <View style={{ height: 200, padding: 30, flexDirection: "row" }}>
-          <YAxis
-            data={data}
-            style={{ marginBottom: xAxisHeight }}
-            contentInset={verticalContentInset}
-            svg={axesSvg}
-          />
-          <View style={{ flex: 1, marginLeft: 10 }}>
-            <LineChart
-              style={{ flex: 1 }}
-              data={data}
-              contentInset={verticalContentInset}
-              svg={{ stroke: "#009394" }}
-            >
-              <Grid />
-            </LineChart>
-            <XAxis
-              style={{ marginHorizontal: -10, height: xAxisHeight }}
-              data={data}
-              formatLabel={(value, index) => index}
-              contentInset={{ left: 10, right: 10 }}
-              svg={axesSvg}
-            />
-          </View>
-        </View>
-      </>
-    );
-  }
-}
+        />
+        <Line
+          theme={{
+            stroke: { color: "#009394", width: 3 },
+            scatter: { default: { width: 4, height: 4, rx: 2 } },
+          }}
+        />
+      </Chart>
+      <Text
+        style={{
+          paddingTop: 10,
+          textAlign: "center",
+          fontSize: 12,
+          color: "#009394",
+        }}
+      >
+        Time s
+      </Text>
+    </View>
+  );
+};
 
 export default BreathingFlowSignal;
