@@ -15,7 +15,9 @@
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/stack": "^6.0.7",
     "expo": "~42.0.1",
+    "expo-cli": "^5.0.1",
     "expo-status-bar": "~1.0.4",
+    "firebase": "^9.6.1",
     "react": "16.13.1",
     "react-chartjs-2": "^3.0.4",
     "react-dom": "16.13.1",
@@ -24,6 +26,7 @@
     "react-native-gesture-handler": "~1.10.2",
     "react-native-paper": "^4.9.2",
     "react-native-reanimated": "~2.2.0",
+    "react-native-responsive-linechart": "^5.7.1",
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.4.0",
     "react-native-svg": "^12.1.1",
@@ -38,5 +41,18 @@
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.3.2"
   },
-  "private": true
+  "private": true,
+  "name": "ventilatorapp1",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PPTBz/ventilatorapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PPTBz/ventilatorapp/issues"
+  },
+  "homepage": "https://github.com/PPTBz/ventilatorapp#readme",
+  "description": ""
 }
