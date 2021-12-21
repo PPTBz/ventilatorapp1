@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E5F0F42763A3DF0067D9EF /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0F32763A3DF0067D9EF /* Tests_iOS.swift */; };
+		18E5F0FF2763A3DF0067D9EF /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0FE2763A3DF0067D9EF /* Tests_macOS.swift */; };
+		18E5F1012763A3DF0067D9EF /* ventilatorappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0D82763A3D90067D9EF /* ventilatorappApp.swift */; };
+		18E5F1022763A3DF0067D9EF /* ventilatorappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0D82763A3D90067D9EF /* ventilatorappApp.swift */; };
+		18E5F1032763A3DF0067D9EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0D92763A3D90067D9EF /* ContentView.swift */; };
+		18E5F1042763A3DF0067D9EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0D92763A3D90067D9EF /* ContentView.swift */; };
+		18E5F1052763A3DF0067D9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E5F0DA2763A3DE0067D9EF /* Assets.xcassets */; };
+		18E5F1062763A3DF0067D9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E5F0DA2763A3DE0067D9EF /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E5F0F02763A3DE0067D9EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E5F0D32763A3D90067D9EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E5F0DE2763A3DE0067D9EF;
+			remoteInfo = "ventilatorapp (iOS)";
+		};
+		18E5F0FB2763A3DF0067D9EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E5F0D32763A3D90067D9EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E5F0E62763A3DE0067D9EF;
+			remoteInfo = "ventilatorapp (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18E5F0D82763A3D90067D9EF /* ventilatorappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ventilatorappApp.swift; sourceTree = "<group>"; };
+		18E5F0D92763A3D90067D9EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18E5F0DA2763A3DE0067D9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18E5F0DF2763A3DE0067D9EF /* ventilatorapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ventilatorapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E5F0E22763A3DE0067D9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E5F0E72763A3DE0067D9EF /* ventilatorapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ventilatorapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E5F0E92763A3DE0067D9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E5F0EA2763A3DE0067D9EF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		18E5F0EF2763A3DE0067D9EF /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E5F0F32763A3DF0067D9EF /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		18E5F0F52763A3DF0067D9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E5F0FA2763A3DF0067D9EF /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E5F0FE2763A3DF0067D9EF /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		18E5F1002763A3DF0067D9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E5F0DC2763A3DE0067D9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E5F0E42763A3DE0067D9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E5F0EC2763A3DE0067D9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E5F0F72763A3DF0067D9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E5F0D22763A3D90067D9EF = {
+			isa = PBXGroup;
+			children = (
+				18E5F0D72763A3D90067D9EF /* Shared */,
+				18E5F0E12763A3DE0067D9EF /* iOS */,
+				18E5F0E82763A3DE0067D9EF /* macOS */,
+				18E5F0F22763A3DF0067D9EF /* Tests iOS */,
+				18E5F0FD2763A3DF0067D9EF /* Tests macOS */,
+				18E5F0E02763A3DE0067D9EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E5F0D72763A3D90067D9EF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				18E5F0D82763A3D90067D9EF /* ventilatorappApp.swift */,
+				18E5F0D92763A3D90067D9EF /* ContentView.swift */,
+				18E5F0DA2763A3DE0067D9EF /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		18E5F0E02763A3DE0067D9EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E5F0DF2763A3DE0067D9EF /* ventilatorapp.app */,
+				18E5F0E72763A3DE0067D9EF /* ventilatorapp.app */,
+				18E5F0EF2763A3DE0067D9EF /* Tests iOS.xctest */,
+				18E5F0FA2763A3DF0067D9EF /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E5F0E12763A3DE0067D9EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				18E5F0E22763A3DE0067D9EF /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		18E5F0E82763A3DE0067D9EF /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				18E5F0E92763A3DE0067D9EF /* Info.plist */,
+				18E5F0EA2763A3DE0067D9EF /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		18E5F0F22763A3DF0067D9EF /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				18E5F0F32763A3DF0067D9EF /* Tests_iOS.swift */,
+				18E5F0F52763A3DF0067D9EF /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		18E5F0FD2763A3DF0067D9EF /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				18E5F0FE2763A3DF0067D9EF /* Tests_macOS.swift */,
+				18E5F1002763A3DF0067D9EF /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E5F0DE2763A3DE0067D9EF /* ventilatorapp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E5F1092763A3DF0067D9EF /* Build configuration list for PBXNativeTarget "ventilatorapp (iOS)" */;
+			buildPhases = (
+				18E5F0DB2763A3DE0067D9EF /* Sources */,
+				18E5F0DC2763A3DE0067D9EF /* Frameworks */,
+				18E5F0DD2763A3DE0067D9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ventilatorapp (iOS)";
+			productName = "ventilatorapp (iOS)";
+			productReference = 18E5F0DF2763A3DE0067D9EF /* ventilatorapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E5F0E62763A3DE0067D9EF /* ventilatorapp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E5F10C2763A3DF0067D9EF /* Build configuration list for PBXNativeTarget "ventilatorapp (macOS)" */;
+			buildPhases = (
+				18E5F0E32763A3DE0067D9EF /* Sources */,
+				18E5F0E42763A3DE0067D9EF /* Frameworks */,
+				18E5F0E52763A3DE0067D9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ventilatorapp (macOS)";
+			productName = "ventilatorapp (macOS)";
+			productReference = 18E5F0E72763A3DE0067D9EF /* ventilatorapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E5F0EE2763A3DE0067D9EF /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E5F10F2763A3DF0067D9EF /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				18E5F0EB2763A3DE0067D9EF /* Sources */,
+				18E5F0EC2763A3DE0067D9EF /* Frameworks */,
+				18E5F0ED2763A3DE0067D9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E5F0F12763A3DE0067D9EF /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 18E5F0EF2763A3DE0067D9EF /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		18E5F0F92763A3DF0067D9EF /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E5F1122763A3DF0067D9EF /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				18E5F0F62763A3DF0067D9EF /* Sources */,
+				18E5F0F72763A3DF0067D9EF /* Frameworks */,
+				18E5F0F82763A3DF0067D9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E5F0FC2763A3DF0067D9EF /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 18E5F0FA2763A3DF0067D9EF /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E5F0D32763A3D90067D9EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					18E5F0DE2763A3DE0067D9EF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					18E5F0E62763A3DE0067D9EF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					18E5F0EE2763A3DE0067D9EF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 18E5F0DE2763A3DE0067D9EF;
+					};
+					18E5F0F92763A3DF0067D9EF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 18E5F0E62763A3DE0067D9EF;
+					};
+				};
+			};
+			buildConfigurationList = 18E5F0D62763A3D90067D9EF /* Build configuration list for PBXProject "ventilatorapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E5F0D22763A3D90067D9EF;
+			productRefGroup = 18E5F0E02763A3DE0067D9EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E5F0DE2763A3DE0067D9EF /* ventilatorapp (iOS) */,
+				18E5F0E62763A3DE0067D9EF /* ventilatorapp (macOS) */,
+				18E5F0EE2763A3DE0067D9EF /* Tests iOS */,
+				18E5F0F92763A3DF0067D9EF /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E5F0DD2763A3DE0067D9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E5F1052763A3DF0067D9EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E5F0E52763A3DE0067D9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E5F1062763A3DF0067D9EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E5F0ED2763A3DE0067D9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E5F0F82763A3DF0067D9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E5F0DB2763A3DE0067D9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E5F1032763A3DF0067D9EF /* ContentView.swift in Sources */,
+				18E5F1012763A3DF0067D9EF /* ventilatorappApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E5F0E32763A3DE0067D9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E5F1042763A3DF0067D9EF /* ContentView.swift in Sources */,
+				18E5F1022763A3DF0067D9EF /* ventilatorappApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E5F0EB2763A3DE0067D9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E5F0F42763A3DF0067D9EF /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E5F0F62763A3DF0067D9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E5F0FF2763A3DF0067D9EF /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E5F0F12763A3DE0067D9EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E5F0DE2763A3DE0067D9EF /* ventilatorapp (iOS) */;
+			targetProxy = 18E5F0F02763A3DE0067D9EF /* PBXContainerItemProxy */;
+		};
+		18E5F0FC2763A3DF0067D9EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E5F0E62763A3DE0067D9EF /* ventilatorapp (macOS) */;
+			targetProxy = 18E5F0FB2763A3DF0067D9EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18E5F1072763A3DF0067D9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18E5F1082763A3DF0067D9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		18E5F10A2763A3DF0067D9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q9D2LPVJT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPTBz.ventilatorapp;
+				PRODUCT_NAME = ventilatorapp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18E5F10B2763A3DF0067D9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q9D2LPVJT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPTBz.ventilatorapp;
+				PRODUCT_NAME = ventilatorapp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E5F10D2763A3DF0067D9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Q9D2LPVJT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PPTBz.ventilatorapp;
+				PRODUCT_NAME = ventilatorapp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		18E5F10E2763A3DF0067D9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Q9D2LPVJT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PPTBz.ventilatorapp;
+				PRODUCT_NAME = ventilatorapp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		18E5F1102763A3DF0067D9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q9D2LPVJT;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "PPTBz.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ventilatorapp (iOS)";
+			};
+			name = Debug;
+		};
+		18E5F1112763A3DF0067D9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q9D2LPVJT;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "PPTBz.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ventilatorapp (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E5F1132763A3DF0067D9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Q9D2LPVJT;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "PPTBz.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "ventilatorapp (macOS)";
+			};
+			name = Debug;
+		};
+		18E5F1142763A3DF0067D9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Q9D2LPVJT;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "PPTBz.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "ventilatorapp (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E5F0D62763A3D90067D9EF /* Build configuration list for PBXProject "ventilatorapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E5F1072763A3DF0067D9EF /* Debug */,
+				18E5F1082763A3DF0067D9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E5F1092763A3DF0067D9EF /* Build configuration list for PBXNativeTarget "ventilatorapp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E5F10A2763A3DF0067D9EF /* Debug */,
+				18E5F10B2763A3DF0067D9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E5F10C2763A3DF0067D9EF /* Build configuration list for PBXNativeTarget "ventilatorapp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E5F10D2763A3DF0067D9EF /* Debug */,
+				18E5F10E2763A3DF0067D9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E5F10F2763A3DF0067D9EF /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E5F1102763A3DF0067D9EF /* Debug */,
+				18E5F1112763A3DF0067D9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E5F1122763A3DF0067D9EF /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E5F1132763A3DF0067D9EF /* Debug */,
+				18E5F1142763A3DF0067D9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E5F0D32763A3D90067D9EF /* Project object */;
+}
