@@ -479,7 +479,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PPTBz.ventilatorapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ventilatorapp";
 				PRODUCT_NAME = ventilatorapp;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -501,7 +501,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PPTBz.ventilatorapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ventilatorapp";
 				PRODUCT_NAME = ventilatorapp;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;

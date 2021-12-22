@@ -1,8 +1,7 @@
+// @refresh reset
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import React from "react";
+import React, { useState } from "react";
 import {
   SafeAreaView,
   ScrollView,
@@ -15,8 +14,10 @@ import Dashboard from "./src/screens/Dashboard";
 import BreathingFlowSignal from "./src/screens/BreathingFlowSignal";
 import NasalPressure from "./src/screens/NasalPressure";
 
-import * as firebase from "firebase";
-import "firebase/firestore";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
+import { QuerySnapshot } from "@firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyB5I_3OQTgJxD7vvTXOJB-hSq-2XYLg7Fc",
@@ -28,8 +29,9 @@ const firebaseConfig = {
   measurementId: "G-ZVSBE0CC53",
 };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+if (firebase.apps.length == 0) {
+  firebase.initializeApp(firebaseConfig);
+}
 
 const Stack = createStackNavigator();
 
@@ -53,5 +55,18 @@ const App = () => {
     </NavigationContainer>
   );
 };
+
+// db.collection("ventilatordata")
+// .where("capital", "==", true)
+// .get()
+//.then((querySnapshot) => {
+//querySnapshot.forEach((doc) => {
+// doc.data() is never undefined for query doc snapshots
+// console.log(doc.id, " => ", doc.data());
+// });
+// })
+//.catch((error) => {
+// console.log("Error getting documents: ", error);
+// });
 
 export default App;
