@@ -8,7 +8,6 @@ import {
   Area,
   HorizontalAxis,
   VerticalAxis,
-  Tooltip,
 } from "react-native-responsive-linechart";
 
 const NasalPressure = () => {
@@ -70,9 +69,9 @@ const NasalPressure = () => {
           { x: 19, y: 4.9 },
           { x: 20, y: 6.5 },
         ]}
-        padding={{ left: 70, bottom: 20, right: 30, top: 30 }}
+        padding={{ left: 60, bottom: 20, right: 30, top: 30 }}
         xDomain={{ min: 0, max: 20 }}
-        yDomain={{ min: 0, max: 12 }}
+        yDomain={{ min: 2, max: 12 }}
       >
         <VerticalAxis
           tickCount={11}
@@ -89,10 +88,8 @@ const NasalPressure = () => {
         />
         <Line
           theme={{
-            stroke: { color: "#009394", width: 4 },
-            scatter: {
-              default: { width: 4, height: 4, rx: 2, color: "#000" },
-            },
+            stroke: { color: "#009394", width: 3 },
+            scatter: { default: { width: 4, height: 4, rx: 2 } },
           }}
         />
       </Chart>

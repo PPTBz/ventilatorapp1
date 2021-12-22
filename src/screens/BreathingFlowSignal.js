@@ -69,13 +69,13 @@ const BreathingFlowSignal = () => {
           { x: 19, y: 0.4 },
           { x: 20, y: 0.7 },
         ]}
-        padding={{ left: 65, bottom: 20, right: 35, top: 30 }}
+        padding={{ left: 70, bottom: 20, right: 25, top: 30 }}
         xDomain={{ min: 0, max: 20 }}
         yDomain={{ min: -0.4, max: 1 }}
       >
         <VerticalAxis
           tickCount={8}
-          theme={{ labels: { formatter: (v) => v.toFixed(1) } }}
+          theme={{ labels: { formatter: (v) => v.toFixed(2) } }}
         />
         <HorizontalAxis tickCount={5} />
         <Area
