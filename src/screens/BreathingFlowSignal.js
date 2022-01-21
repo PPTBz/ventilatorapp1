@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
-import Colors from "../theme/Colors";
-import ViewContainer, { styles } from "../components/ViewContainer";
+import Colors from "../../theme/Colors";
+import ViewContainer, { styles } from "../../components/ViewContainer";
 import {
   Chart,
   Line,
@@ -9,6 +9,8 @@ import {
   HorizontalAxis,
   VerticalAxis,
 } from "react-native-responsive-linechart";
+
+//import db from "../db/firebase";
 
 const BreathingFlowSignal = () => {
   return (
